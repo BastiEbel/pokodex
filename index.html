@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/stats.css">
 
     <script src="js/render.js"></script>
 
@@ -15,22 +16,50 @@
 <body onload="loadPokemon()">
     <div class="container-pokedex">
         <div class="pokedex">
-            <h1 id="pokemon-name">Name:</h1>
+            <div class="pokedex-info">
+                <h1 id="pokemon-name">Name:</h1>
+                <span id="pokemon-index"></span>
+            </div>
+            <div class="type-of-pokemon">
+                <span id="pokemon-type"></span>
+            </div>
             <img id="pokemon-pic">
         </div>
 
         <div class="info-container">
-            <div>
-                <a href="">About</a>
+            <div class="container-stats">
+                <div class="container-about">
+                    <a href="">About</a>
+                </div>
+                <div class="container-base-stats">
+                    <a href="">Base Stats</a>
+                </div>
+                <div class="container-evolution">
+                    <a href="">Evolution</a>
+                </div>
+                <div class="container-moves">
+                    <a href="">Moves</a>
+                </div>
             </div>
-            <div>
-                <a href="">Base Stats</a>
+            <div class="container-species">
+                <span class="species">Species:</span>
+                <span id="species-name"></span>
             </div>
-            <div>
-                <a href="">Evolution</a>
+            <div class="container-species">
+                <span class="species">Height</span>
+                <span id="species-height"></span>
             </div>
+            <div class="container-species">
+                <span class="species">Weight</span>
+                <span id="species-weight"></span>
+            </div>
+            <div class="container-species">
+                <span class="species">Abilities</span>
+                <span id="species-abilities"></span>
+            </div>
+
             <div>
-                <a href="">Moves</a>
+                <h3>Breeding</h3>
             </div>
         </div>
     </div>

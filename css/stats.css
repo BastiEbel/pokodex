@@ -1,0 +1,56 @@
+.info-container {
+    background-color: white;
+    height: 500px;
+    width: 400px;
+    border-radius: 30px;
+    margin-top: -40px;
+}
+
+.container-stats {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom-color: gray;
+}
+
+.container-stats a{
+    text-decoration: none;
+}
+
+.container-stats a:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.container-about a{
+    color: black;
+    font-size: larger;
+    height: 30px;
+}
+
+.container-species {
+    width: 260px;
+    height: 30px;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.species {
+    color: rgb(131, 131, 131);
+}
+
+#species-abilities {
+    margin-left: 40px;
+}
+
+h3 {
+    margin-left: 30px;
+    font-size: x-large;
+}
