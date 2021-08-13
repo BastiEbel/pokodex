@@ -5,64 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokodex</title>
+
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/stats.css">
+    <link rel="stylesheet" href="css/render.css">
 
     <script src="js/render.js"></script>
-
 </head>
 
-<body onload="loadPokemon()">
-    <div class="container-pokedex">
-        <div class="pokedex">
-            <div class="pokedex-info">
-                <h1 id="pokemon-name">Name:</h1>
-                <span id="pokemon-index"></span>
-            </div>
-            <div class="type-of-pokemon">
-                <span id="pokemon-type"></span>
-            </div>
-            <img id="pokemon-pic">
+<body onload="init()">
+    <div class="container-header">
+        <div class="logo">
+            <img src="img/Pokedex-logo.webp">
         </div>
-
-        <div class="info-container">
-            <div class="container-stats">
-                <div class="container-about">
-                    <a href="">About</a>
-                </div>
-                <div class="container-base-stats">
-                    <a href="">Base Stats</a>
-                </div>
-                <div class="container-evolution">
-                    <a href="">Evolution</a>
-                </div>
-                <div class="container-moves">
-                    <a href="">Moves</a>
-                </div>
-            </div>
-            <div class="container-species">
-                <span class="species">Species:</span>
-                <span id="species-name"></span>
-            </div>
-            <div class="container-species">
-                <span class="species">Height</span>
-                <span id="species-height"></span>
-            </div>
-            <div class="container-species">
-                <span class="species">Weight</span>
-                <span id="species-weight"></span>
-            </div>
-            <div class="container-species">
-                <span class="species">Abilities</span>
-                <span id="species-abilities"></span>
-            </div>
-
-            <div>
-                <h3>Breeding</h3>
-            </div>
+        <div class="search-field">
+            <input placeholder="Pokemon finden...">
+            <button>Suche</button>
         </div>
     </div>
+
+    <div id="render-pokemons" class="container-pokemon"></div>
+
 </body>
 
 </html>
