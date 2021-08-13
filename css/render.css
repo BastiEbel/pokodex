@@ -1,4 +1,5 @@
 .container-pokemon{
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -10,11 +11,39 @@
 }
 
 .pokemon-card {
+    position: relative;
     border-radius: 20px;
-    padding: 30px;
+    padding: 10px;
     height: 150px;
     width: 250px;
     border: 2px solid black;
     margin: 30px;
-    background-color: rgb(0, 167, 64);
+    background-color: rgb(255, 112, 112);
+}
+
+.type-of {
+    border: 1px solid black;
+    font-size: large;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: rgb(255, 153, 153);
+    margin-top: 25px;
+}
+
+.container-img {
+    position: absolute;
+    bottom: -30px;
+    right: -20px;
+    width: 150px;
+    height: 150px;
+}
+
+.pokemon-img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
