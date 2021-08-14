@@ -32,7 +32,7 @@ h1 {
 }
 
 .pokedex{
-    height: 280px;
+    height: 320px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     display: flex;
@@ -42,11 +42,32 @@ h1 {
     width: 400px;
 }
 
+.x-mark {
+    cursor: pointer;
+    width: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.container-arrow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow {
+    cursor: pointer;
+    width: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .pokedex-info {
+    height: 60px;
     display: flex;
     justify-content: space-between;
     margin-right: 30px;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .type-of-pokemon {
@@ -65,7 +86,6 @@ h1 {
 
 #pokemon-index {
     font-size: x-large;
-    padding-bottom: 20px;
 }
 
 #pokemon-pic {
@@ -93,26 +113,28 @@ h1 {
 }
 
 .container-stats {
+    z-index: 7;
     display: flex;
     justify-content: space-between;
     height: 30px;
     margin-top: 35px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     padding-left: 30px;
     padding-right: 30px;
     border-bottom-color: gray;
+    
 }
 
-.container-stats a{
-    text-decoration: none;
-}
-
-.container-stats a:hover {
-    color: blue;
+.container-about:hover {
+    z-index: 7;
+    color: rgb(51, 51, 51);
     cursor: pointer;
 }
 
-.container-about a{
+.container-about {
+    z-index: 7;
+    text-decoration: none;
+    cursor: pointer;
     color: black;
     font-size: larger;
     height: 30px;
