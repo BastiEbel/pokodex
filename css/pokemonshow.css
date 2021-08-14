@@ -163,3 +163,15 @@ h3 {
     font-size: x-large;
 }
 
+@media(max-width: 800px) {
+    .pokedex{
+        width: 360px;
+        border-radius: unset;
+    }
+
+    .bg-container-stats {
+        width: 360px;
+        height: 360px;
+        border-radius: unset;
+    }
+}
