@@ -1,0 +1,143 @@
+h1 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 24px;
+    margin-left: 24px;
+    font-size: xx-large;
+}
+
+.d-none {
+    display: none;
+}
+
+.info-container-bg {
+    background-color: rgba(255, 255, 255, 0.479);
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+
+.info-container {
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pokedex{
+    height: 280px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 112, 112);
+    color: white;
+    width: 400px;
+}
+
+.pokedex-info {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    align-items: flex-end;
+}
+
+.type-of-pokemon {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 80px;
+    background-color: rgb(255, 153, 153);
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
+
+#pokemon-index {
+    font-size: x-large;
+    padding-bottom: 20px;
+}
+
+#pokemon-pic {
+    height: 150px;
+    width: 150px;
+}
+
+.img-pokemon {
+    z-index: 5;
+    height: 180px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    object-fit: cover;
+}
+
+.bg-container-stats {
+    z-index: 4;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    margin-top: -40px;
+    border-radius: 30px;
+
+}
+
+.container-stats {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    margin-top: 35px;
+    margin-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom-color: gray;
+}
+
+.container-stats a{
+    text-decoration: none;
+}
+
+.container-stats a:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.container-about a{
+    color: black;
+    font-size: larger;
+    height: 30px;
+}
+
+.container-species {
+    width: 260px;
+    height: 30px;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.species {
+    color: rgb(131, 131, 131);
+}
+
+#species-abilities {
+    margin-left: 40px;
+}
+
+h3 {
+    margin-left: 30px;
+    font-size: x-large;
+}
+

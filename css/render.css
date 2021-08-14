@@ -11,6 +11,7 @@
 }
 
 .pokemon-card {
+    cursor: pointer;
     position: relative;
     border-radius: 20px;
     padding: 10px;
