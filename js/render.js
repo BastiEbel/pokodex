@@ -15,6 +15,32 @@ async function init() {
     render();
 }
 
+function searchPokemon() {
+    let pokemonList = document.getElementById('render-pokemons');
+    pokemonList.innerHTML = '';
+
+    let searchname = document.getElementById('search-input').value;
+    searchname = searchname.toLowerCase();
+    console.log(searchname);
+    
+    if (!document.getElementById('search-input').value) {
+        render();
+    } else {
+        for (let i = 0; i < allPokemons.length; i++) {
+            pokemon = allPokemons[i];
+
+            if (pokemon['name'].toLowerCase().includes(searchname)) {
+                pokemonList.innerHTML += `<div onclick="showPokemon(${i})" class="pokemon-card"><h3>${pokemon['name']}</h3>
+                                    <div class="type-of" id="type-of${i}"></div>
+                                    <div class="container-img"><img class="pokemon-img" src="${pokemon['sprites']['front_shiny']}"></div>
+                                    </div>`;
+                typerender(i);
+            }
+        }
+    }
+
+}
+
 function render() {
     let pokemonList = document.getElementById('render-pokemons');
     pokemonList.innerHTML = '';
@@ -117,14 +143,14 @@ function switchright(i) {
 }
 
 function basestats(i) {
-    pokemon = allPokemons[i]
+    pokemon = allPokemons[i];
 
     let pokemonList = document.getElementById('base-stats');
     pokemonList.innerHTML = '';
 
     for (let i = 0; i < pokemon['stats'].length; i++) {
         let currentStat = pokemon['stats'][i];
-        
+
         pokemonList.innerHTML += `<div id="base-stats" class="container-species">
         <span class="species">${currentStat['stat']['name']}:</span>
         <span id="stat-number">${currentStat['base_stat']}</span>
@@ -132,8 +158,8 @@ function basestats(i) {
     }
 }
 
-function Evolution(i){
-    pokemon = allPokemons[i]
+function Evolution(i) {
+    pokemon = allPokemons[i];
 
     let pokemonList = document.getElementById('base-stats');
     pokemonList.innerHTML = '';
@@ -143,14 +169,14 @@ function Evolution(i){
 }
 
 function Moves(i) {
-    pokemon = allPokemons[i]
+    pokemon = allPokemons[i];
 
     let pokemonList = document.getElementById('base-stats');
     pokemonList.innerHTML = '';
 
     for (let i = 0; i < 7; i++) {
         let currentStat = pokemon['moves'][i];
-        
+
         pokemonList.innerHTML += `<div id="base-stats" class="container-species">
         <span class="species">${currentStat['move']['name']}:</span>
         <span id="stat-number${i}">${currentStat['version_group_details'][0]['version_group']['name']}</span>
