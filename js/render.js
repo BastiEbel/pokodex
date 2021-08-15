@@ -10,8 +10,6 @@ async function init() {
         allPokemons.push(renderpokemon);
     }
 
-
-    console.log(allPokemons);
     render();
 }
 
@@ -21,7 +19,6 @@ function searchPokemon() {
 
     let searchname = document.getElementById('search-input').value;
     searchname = searchname.toLowerCase();
-    console.log(searchname);
     
     if (!document.getElementById('search-input').value) {
         render();
