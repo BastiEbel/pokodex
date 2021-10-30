@@ -175,3 +175,47 @@ h3 {
         border-radius: unset;
     }
 }
+
+@media(max-width: 400px){
+    .info-container{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .pokedex{
+        width: 100%;
+    }
+
+    h1{
+        font-size: x-large;
+        margin-top: 12px;
+    }
+
+    .img-pokemon{
+        height: 120px;
+    }
+
+    #pokemon-pic{
+        height: 120px;
+        width: 120px;
+    }
+
+    .bg-container-stats{
+        width: 100%;
+    }
+
+    .container-stats{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .container-about{
+        font-size: medium;
+    }
+
+    .container-species{
+        width: 90%;
+        font-size: medium;
+        margin-left: 5%;
+    }
+}

@@ -48,3 +48,35 @@
     width: 100%;
     object-fit: contain;
 }
+
+@media (max-width: 750px) {
+    .container-pokemon{
+        justify-content: center;
+    }
+
+    .pokemon-card{
+        width: 200px;
+        height: 100px;
+    }
+
+    h3{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .type-of{
+        margin-top: 0px;
+    }
+
+    .container-img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 350px) {
+    .container-pokemon{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
